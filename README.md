@@ -50,7 +50,7 @@ Designed to help users organize their daily tasks through a simple, intuitive, a
 
 ---
 
-## 💙 Support
+### 💙 Support
 
 If you found this project helpful or inspiring, consider giving it a ⭐.
 
