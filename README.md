@@ -26,7 +26,6 @@ Designed to help users organize their daily tasks through a simple, intuitive, a
 
 </p>
 
-
 ---
 ## 🛠️ Tech Stack
 
