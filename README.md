@@ -22,7 +22,8 @@ Designed to help users organize their daily tasks through a simple, intuitive, a
 ## 📸 Project Preview
 
 <p align="center">
-  <img width="1918" height="908" alt="Screenshot 2026-07-05 154926" src="https://github.com/user-attachments/assets/01b55d05-0261-42fa-9895-269d1a4df3e0" />
+  <img width="1918" height="908" alt="Screenshot 2026-07-05 154926" src="https://github.com/user-attachments/assets/03b44c53-8f10-4d2d-8c9b-bc6934b31d63" />
+
 </p>
 
 
