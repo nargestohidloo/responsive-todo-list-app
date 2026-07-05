@@ -37,7 +37,7 @@ Designed to help users organize their daily tasks through a simple, intuitive, a
 
 ## 🌐 Live Demo
 
-🔗 **https://nargestohidloo.github.io/todolist/**
+🔗 **https://nargestohidloo.github.io/responsive-todo-list-app/**
 
 ---
 
