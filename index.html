@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mytodolist</title>
+    <!-- فونت و آیکون‌ها -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style.css">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+</head>
+
+<body>
+    <!-- پس‌زمینه متحرک -->
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    <div class="app-container">
+        <header>
+            <h1><i class="fas fa-rocket"></i> وظایف من</h1>
+            <p>برنامه‌ریزی هوشمند و زیبا</p>
+            <!-- بخش جستجو -->
+            <div class="search-wrapper">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search-input" placeholder="جستجو در کارها...">
+            </div>
+            <!-- دکمه جستجو اصلاح شده -->
+            <button class="mybtn" onclick="mysearch()">جست و جو کنید</button>
+            <div class="search-hint">
+                <i class="fas fa-filter"></i> برای فیلتر کردن تایپ کنید
+            </div>
+        </header>
+        <!-- بخش ورودی -->
+        <div class="input-wrapper">
+            <input type="text" id="todo-input" placeholder="کار جدید رو اینجا بنویس...">
+            <button id="add-btn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+        <!-- کانتینر اصلی که دو ستون داره -->
+        <div class="main-content">
+            <!-- ستون کارهای جاری -->
+            <div class="column active-column">
+                <div class="column-header">
+                    <h2><i class="fas fa-list-check"></i> در حال انجام</h2>
+                    <span class="count-badge" id="active-count"></span>
+                </div>
+                <ul id="todo-list">
+                    <!-- آیتم‌ها اینجا اضافه میشن -->
+                </ul>
+                <div class="empty-state" id="empty-active">
+                    <i class="fas fa-coffee"></i>
+                    <p>لیستت خالیه! یه کاری اضافه کن.</p>
+                </div>
+            </div>
+            <!-- ستون آرشیو -->
+            <div class="column archived-column">
+                <div class="column-header">
+                    <h2><i class="fas fa-archive"></i> آرشیو شده</h2>
+                    <span class="count-badge" id="archive-count"></span>
+                </div>
+                <ul id="archive-list">
+                    <!-- آیتم‌های آرشیو اینجا میرن -->
+                </ul>
+                <div class="empty-state" id="empty-archive">
+                    <i class="fas fa-inbox"></i>
+                    <p>هنوز کاری رو آرشیو نکردی.</p>
+                </div>
+            </div>
+        </div>
+        <!-- دکمه پاکسازی کامل آرشیو -->
+        <div class="footer-actions">
+            <button id="clear-archive-btn" class="danger-text">
+                <i class="fas fa-broom" onclick="mydelete()"> پاک سازی کل صفحه</i>
+            </button>
+        </div>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+</html>
