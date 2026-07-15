@@ -4,6 +4,7 @@ btn.addEventListener('click', (e) => {
     let user = document.getElementById('todo-input').value
     if (user == '') {
         alert('لطفا وارد کنید!')
+        return
     }
     let li = document.createElement('li')
     li.innerHTML = `
