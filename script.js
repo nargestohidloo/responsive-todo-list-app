@@ -5,6 +5,7 @@ btn.addEventListener('click', (e) => {
     if (user == '') {
         alert('لطفا وارد کنید!')
         return
+
     }
     let li = document.createElement('li')
     li.innerHTML = `
